@@ -1,16 +1,74 @@
-# React + Vite
+# Midmar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern single-page landing site built with React and Vite. The project includes animated scrolling, responsive layout, and a clean service/portfolio showcase for an agency, product, or creative brand.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive React SPA using Vite
+- Tailwind CSS utility styling
+- Smooth animations with GSAP and Lenis
+- Modular components for Hero, Services, Portfolio, Why Us, Client Logos, and Call To Action
+- Simple, easy-to-extend project structure
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Tailwind CSS
+- GSAP (`@gsap/react`)
+- Lenis
+- Lucide React icons
+- Split-Type for text effects
+- ESLint for linting
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/main.jsx` — app entry point
+- `src/App.jsx` — root application layout
+- `src/components/` — reusable page sections
+- `src/index.css` / `src/App.css` — global and app styling
+- `public/` — static assets
+
+## Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open the displayed localhost URL in your browser to preview the site.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Lint the project
+
+```bash
+npm run lint
+```
+
+## Notes
+
+- The app is configured as a Vite project with React plugin support.
+- Tailwind CSS is used for styling, so utility classes are the main styling method.
+- Animation logic is handled in components using `gsap` and `lenis`.
+
+## Customization
+
+To update the content, edit the component files under `src/components/` and the layout in `src/App.jsx`.
