@@ -1,3 +1,5 @@
+import Logo from './Logo';
+
 function Footer() {
   return (
     <footer className="relative py-32 bg-gray-50 overflow-hidden flex flex-col items-center justify-center text-center px-6 border-t border-gray-200">
@@ -13,9 +15,7 @@ function Footer() {
       {/* Logo + CTA */}
       <div className="relative z-10 mb-20">
         <div className="flex items-center justify-center gap-3 mb-10">
-          <span className="text-4xl font-bold tracking-tighter text-gray-900">
-            Al Midmar Adv Design
-          </span>
+          <Logo className="h-10 md:h-12 w-auto" textColor="#111827" />
         </div>
         <h2 className="text-4xl md:text-5xl font-medium tracking-tighter text-gray-900 mb-6">
           Let's Create Together

@@ -22,6 +22,13 @@
   }
 }
 
+@layer utilities {
+  .splash-draw {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
 /* Theme overrides for common Tailwind color tokens */
 @layer utilities {
   .text-primary {
